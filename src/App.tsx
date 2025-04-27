@@ -1,33 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import CarInsuranceDisplay from "./components/CarInsuranceDisplay"
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <header className="bg-slate-200 p-10">
+
+        <div className="mx-auto max-w-7xl flex justify-between items-center">
+
+          <div>
+            <h1 className="text-2xl md:text-4xl font-bold text-blue-600">Seguros<span className="text-red-600">Rapido</span>.mx</h1>
+          </div>
+
+          <nav className="hidden md:flex space-x-4 justify-center items-center p-2 ">
+            <a className="hover:text-blue-500 hover:font-semibold" href="#">Notoros</a>
+            <a className="hover:text-blue-500 hover:font-semibold" href="#">Tipos de Seguros</a>
+            <a className="hover:text-blue-500 hover:font-semibold" href="#">Contacto</a>
+          </nav>
+        </div>
+      </header>
+
+      <section className="mx-auto md:px-10">
+          <CarInsuranceDisplay />
+      </section>
+
     </>
   )
 }
