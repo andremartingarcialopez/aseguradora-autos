@@ -1,3 +1,4 @@
+import AboutUs from "./components/AboutUs"
 import CarInsuranceDisplay from "./components/CarInsuranceDisplay"
 
 
@@ -23,7 +24,10 @@ function App() {
 
       <section className="mx-auto md:px-10">
           <CarInsuranceDisplay />
+          <AboutUs/>
       </section>
+
+
 
     </>
   )

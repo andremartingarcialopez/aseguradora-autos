@@ -3,7 +3,7 @@ import { CalendarDateRangeIcon, ChevronUpDownIcon, FlagIcon } from "@heroicons/r
 export default function CarInsuranceDisplay() {
     return (
         <>
-            <div className="text-center mt-10">
+            <div className="text-center my-10">
                 <h1 className="text-3xl md:text-5xl font-bold text-blue-600">Seguros<span className="text-red-600">Rapido</span>.mx</h1>
                 <p className="font-semibold ">La forma mas rapida de cotizar el seguro de tu auto</p>
             </div>
@@ -39,7 +39,7 @@ export default function CarInsuranceDisplay() {
 
                 
                 <div>
-                    <img className="w-full" src="/public/car.svg" alt="" />
+                    <img className="w-full" src="/public/car1.svg" alt="" />
                 </div>
 
             </div>
